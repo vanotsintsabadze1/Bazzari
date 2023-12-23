@@ -1,0 +1,22 @@
+.navigation {
+  width: 100dvw;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.burgerMenu {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.mobileSideBar {
+  width: 80px;
+  height: 200px;
+  background: gold;
+  position: absolute;
+  top: 0;
+  right: 0;
+}

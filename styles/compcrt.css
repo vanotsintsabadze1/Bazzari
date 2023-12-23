@@ -1,0 +1,50 @@
+.companycrt_wrapper {
+  width: 100dvw;
+  height: 350px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.authorization_image_div {
+  width: 90%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.authorization_text_div {
+  width: 90%;
+  height: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.authorization_text_div p {
+  font-size: 12px;
+  width: 200px;
+  margin-top: 10px;
+}
+
+.authorization_text_div button {
+  width: 100px;
+  height: 35px;
+  padding: 10px;
+  background: white;
+  outline: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 10px;
+}
