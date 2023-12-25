@@ -3,6 +3,8 @@ import "@/styles/nav.css";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
+import Link from "next/link";
+import { HiMiniArrowRightOnRectangle } from "react-icons/hi2";
 
 export default function Nav() {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -27,9 +29,27 @@ export default function Nav() {
               animate={{ translateX: 0 }}
               exit={{ translateX: 110 }}
               transition={{ duration: 0.3, ease: "easeOut" }}
-              onClick={() => setMobileMenu((prev) => !prev)}
               className="mobileSideBar"
-            ></motion.div>
+            >
+              <div className="mobile_nav_item_wrapper">
+                <Link className="mobile_route" href="/">
+                  Home
+                </Link>
+                <Link className="mobile_route" href="/marketplace">
+                  Marketplace
+                </Link>
+                <Link className="mobile_route" href="/contact">
+                  Contact
+                </Link>
+                <Link className="mobile_route" href="/loginPage">
+                  <button className="mobile_login_button">Sign Up</button>
+                </Link>
+              </div>
+              <HiMiniArrowRightOnRectangle
+                className="mobileNav_hide_arrow"
+                onClick={() => setMobileMenu((prev) => !prev)}
+              />
+            </motion.div>
           )}
         </AnimatePresence>
       </nav>

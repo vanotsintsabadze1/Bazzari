@@ -1,0 +1,31 @@
+.carousel_div {
+  width: 350px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide {
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 15px;
+}
+
+.slide-inactive {
+  display: none;
+}
+
+.arrow-left {
+  margin-right: 25px;
+}
+
+.arrow-right {
+  margin-left: 25px;
+}
+
+.arrow-left,
+.arrow-right {
+  font-size: 27px;
+  color: black;
+}

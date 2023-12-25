@@ -1,0 +1,14 @@
+.featured_item_wrapper {
+  width: 100dvw;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.featured_item_wrapper h4 {
+  text-align: center;
+  font-size: 22px;
+  width: 200px;
+}

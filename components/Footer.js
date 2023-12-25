@@ -20,9 +20,24 @@ export default function Footer() {
           </div>
         </section>
         <section className="socials">
-          <Image src="/imgs/icons/facebook.png" width={20} height={20} />
-          <Image src="/imgs/icons/instagram.png" width={20} height={20} />
-          <Image src="/imgs/icons/email.png" width={20} height={20} />
+          <Image
+            src="/imgs/icons/facebook.png"
+            width={20}
+            height={20}
+            alt="fb_img"
+          />
+          <Image
+            src="/imgs/icons/instagram.png"
+            width={20}
+            height={20}
+            alt="instagram_img"
+          />
+          <Image
+            src="/imgs/icons/email.png"
+            width={20}
+            height={20}
+            alt="email_img"
+          />
         </section>
         <p className="copyright_phrase">
           © Copyright EKOM 2023. <br /> All Rights Reserved
