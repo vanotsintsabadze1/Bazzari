@@ -34,6 +34,7 @@ export default function Carousel({ data }) {
             height={140}
             key={idx}
             className={slide == idx ? "slide" : "slide-inactive"}
+            alt="slide_img"
           />
         ))}
         <FaArrowAltCircleRight className="arrow-right" onClick={nextSlide} />

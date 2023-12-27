@@ -1,0 +1,93 @@
+.login_wrapper {
+  width: 100dvw;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.login_phrase {
+  width: 150px;
+  text-align: center;
+  font-size: 11px;
+  margin-top: 15px;
+}
+
+.input_wrapper {
+  width: 90%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.login_field {
+  width: 250px;
+  height: 30px;
+  outline: none;
+  border: 1px solid gray;
+  padding: 2px 10px 2px 10px;
+  border-radius: 10px;
+}
+
+.additionals_wrapper {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.remember_me_container {
+  display: 60px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.remember_me {
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.forgot_pw {
+  color: black;
+  font-size: 12px;
+}
+
+.socials_wrapper {
+  width: 200px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+}
+
+.socials_wrapper p {
+  font-size: 12px;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.socials_img_wrapper {
+  width: 50;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login_button {
+  width: 100px;
+  height: 30px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 12px;
+}

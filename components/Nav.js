@@ -41,7 +41,7 @@ export default function Nav() {
                 <Link className="mobile_route" href="/contact">
                   Contact
                 </Link>
-                <Link className="mobile_route" href="/loginPage">
+                <Link className="mobile_route" href="/login">
                   <button className="mobile_login_button">Sign Up</button>
                 </Link>
               </div>
