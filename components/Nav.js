@@ -3,8 +3,8 @@ import "@/styles/nav.css";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
+import MobileNavigation from "./MobileNavigation";
 import Link from "next/link";
-import { HiMiniArrowRightOnRectangle } from "react-icons/hi2";
 
 export default function Nav() {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -14,6 +14,13 @@ export default function Nav() {
       <nav className="navigation">
         <h5>ECOMMERCE</h5>
         <Image
+          src="/imgs/logos/logo_no_bg.svg"
+          width={30}
+          height={30}
+          alt="logo"
+          className="logo"
+        />
+        <Image
           src="/imgs/icons/burger.png"
           width={27}
           height={27}
@@ -22,35 +29,22 @@ export default function Nav() {
           priority={true}
           alt="burger"
         />
+        <div className="desktop_navigation_wrapper">
+          <Link className="mobile_route" href="/">
+            HOME
+          </Link>
+          <Link className="mobile_route" href="/marketplace">
+            MARKETPLACE
+          </Link>
+          <Link className="mobile_route" href="/contact">
+            CONTACT
+          </Link>
+          <Link className="mobile_route" href="/login">
+            <button className="mobile_login_button">Sign Up</button>
+          </Link>
+        </div>
         <AnimatePresence>
-          {mobileMenu && (
-            <motion.div
-              initial={{ translateX: 110 }}
-              animate={{ translateX: 0 }}
-              exit={{ translateX: 110 }}
-              transition={{ duration: 0.3, ease: "easeOut" }}
-              className="mobileSideBar"
-            >
-              <div className="mobile_nav_item_wrapper">
-                <Link className="mobile_route" href="/">
-                  Home
-                </Link>
-                <Link className="mobile_route" href="/marketplace">
-                  Marketplace
-                </Link>
-                <Link className="mobile_route" href="/contact">
-                  Contact
-                </Link>
-                <Link className="mobile_route" href="/login">
-                  <button className="mobile_login_button">Sign Up</button>
-                </Link>
-              </div>
-              <HiMiniArrowRightOnRectangle
-                className="mobileNav_hide_arrow"
-                onClick={() => setMobileMenu((prev) => !prev)}
-              />
-            </motion.div>
-          )}
+          {mobileMenu && <MobileNavigation setMobMenu={setMobileMenu} />}
         </AnimatePresence>
       </nav>
     </>

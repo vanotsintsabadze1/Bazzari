@@ -12,6 +12,10 @@
   right: 10px;
 }
 
+.navigation .logo {
+  display: none;
+}
+
 .mobileSideBar {
   width: 130px;
   height: 100dvh;
@@ -33,7 +37,8 @@
   align-items: flex-end;
 }
 
-.mobile_nav_item_wrapper .mobile_route {
+.mobile_nav_item_wrapper .mobile_route,
+.desktop_navigation_wrapper .mobile_route {
   font-size: 14px;
   font-weight: bold;
   text-decoration: none;
@@ -56,4 +61,48 @@
 .mobileNav_hide_arrow {
   color: white;
   font-size: 25px;
+}
+
+.desktop_navigation_wrapper {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .burgerMenu {
+    display: none;
+  }
+
+  .navigation {
+    justify-content: flex-start;
+  }
+
+  .navigation h5 {
+    display: none;
+  }
+
+  .navigation .logo {
+    display: block;
+    margin-left: 15px;
+  }
+
+  .desktop_navigation_wrapper {
+    width: 450px;
+    height: inherit;
+    position: absolute;
+    right: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .desktop_navigation_wrapper .mobile_route {
+    font-size: 13px;
+    color: black;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+  }
+
+  .mobile_login_button {
+    color: white;
+    background: black;
+  }
 }
