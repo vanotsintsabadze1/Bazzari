@@ -28,3 +28,14 @@
   color: white;
   border-radius: 10px;
 }
+
+@media (min-width: 1024px) {
+  .main_wrapper {
+    height: 400px;
+  }
+
+  .main_wrapper h1 {
+    font-size: 60px;
+    width: 800px;
+  }
+}

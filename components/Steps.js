@@ -23,11 +23,10 @@ export default function Steps() {
         </div>
         <div className="step">
           <h4 className="step_name">Add to Cart</h4>
-          <section className="step_text_image_wrapper_reverse">
+          <section className="step_text_image_wrapper">
             <p>
-              Once you've selected <br />
-              the items, add them to your <br />
-              cart and proceed to checkout!
+              Once you've selected the items, add them to your cart and proceed
+              to checkout!
             </p>
             <Image
               src="/imgs/icons/debit-card.png"

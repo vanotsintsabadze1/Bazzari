@@ -3,13 +3,14 @@ import Image from "next/image";
 
 export default function CompanyVerify() {
   return (
-    <section className="companycrt_wrapper">
+    <section className="company_wrapper">
       <div className="authorization_image_div">
         <Image
           src="/imgs/icons/verify.png"
           width={130}
           height={130}
           alt="verify_img"
+          className="verify_img"
         />
       </div>
       <div className="authorization_text_div">
